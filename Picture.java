@@ -52,7 +52,7 @@ public class Picture
         sun = new Circle();
         sun.changeColor("yellow");
         sun.moveHorizontal(100);
-        sun.moveVertical(80);
+        sun.moveVertical(-40);
         sun.changeSize(80);
         sun.makeVisible();
         
@@ -62,10 +62,17 @@ public class Picture
         floor.moveVertical(140);
         floor.changeSize(1000000);
         floor.makeVisible();
-        
-        sun.slowMoveVertical(-100);
     }
-
+    
+    /**
+     * Amanecer
+     */
+    
+    public void amanecer()
+    {
+    sun.slowMoveVertical(100);
+    }
+    
     /**
      * Change this picture to black/white display
      */
